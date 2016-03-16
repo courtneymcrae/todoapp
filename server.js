@@ -8,3 +8,8 @@ var
   bodyParser = require('body-parser'),
   apiRoutes = require('./routes/api.js'),
   cors = require('cors')
+  
+  mongoose.connect('mongodb://localhost/todos', function(err){
+  if(err) throw err
+  console.log('Connected to MongoDB')
+})
