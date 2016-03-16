@@ -1,0 +1,35 @@
+<div class="panel panel-default" ng-hide="todoDetailCtrl.editing">
+	<div class="panel-heading">
+		<h3 class="panel-title">Single Todo:</h3>
+	</div>
+	<div class="panel-body">
+		<h1>{{ todoDetailCtrl.todo.name }} {{ todoDetailCtrl.todo.completed }}</h1>
+		<h3><strong>Name</strong>: {{ todoDetailCtrl.todo.name }}</h3>
+		<h3><strong>Completed</strong>: {{ todoDetailCtrl.todo._id }}</h3>
+	</div>
+	<div class="text-center">
+	<button class="btn btn-info btn-block" ng-click="todoDetailCtrl.editing=!todoDetailCtrl.editing">Edit todo</button>
+	<!-- DELETE BUTTON -->
+	<button class="btn btn-danger btn-block" ng-click="todoDetailCtrl.removeTodo(todoDetailCtrl.todo._id)">Delete todo</button>
+	<!--  -->
+	</div>
+</div>
+
+<div class="panel panel-default" ng-show="todoDetailCtrl.editing">
+<h3><strong>ID</strong>: {{ todoDetailCtrl.todo._id }}</h3>
+	<div class="panel-heading"><h3 class="panel-title">Edit todo</h3></div>
+	<div class="panel-body">
+		<form class="" ng-submit="todoDetailCtrl.updateTodo(todoDetailCtrl.todo._id, todoDetailCtrl.todo.name, todoDetailCtrl.todo.completed)">
+			<div class="form-group">    
+		    	<input type="text" name="name" ng-model="todoDetailCtrl.todo.name" class="form-control">
+		    </div>
+			<div class="form-group">
+				<input type="text" name="completed" ng-model="todoDetailCtrl.todo.completed" placeholder="Completed" class="form-control">
+			</div>
+			<div class="text-center">
+				<button type="submit" class="btn btn-info btn-block">Update todo</button>
+			</div>
+			
+		</form>
+	</div>
+</div>
