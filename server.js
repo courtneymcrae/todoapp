@@ -13,3 +13,29 @@ var
   if(err) throw err
   console.log('Connected to MongoDB')
 })
+
+//enable cors
+app.use(cors());
+
+app.set('view engine', 'ejs')
+
+// get all data/stuff of the body (POST) parameters
+app.use( bodyParser.json() )
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(logger('dev'))
+// set the static files location /public/img will be /img for users
+app.use(express.static(path.join(__dirname, 'public')))
+
+app.get('/', function(req,res){
+  console.log('getting index?')
+  res.render('index')
+})
+
+// configure our routes
+app.use('/api', apiRoutes)
+
+// startup our app at http://localhost:8080
+app.listen(3000, function(){
+  console.log('Server Listening on port 3000...')
+})
