@@ -1,4 +1,4 @@
-angular.module('todosApp', ['ui.router'])
+angular.module('reviewApp', ['ui.router'])
 	.directive('navBar', navBar)
 	.directive('todoForm', todoForm)
 	.filter('reverse', reverse)
