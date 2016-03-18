@@ -1,13 +1,6 @@
 angular.module('reviewApp', ['ui.router'])
 	.directive('navBar', navBar)
 	.directive('todoForm', todoForm)
-	.filter('reverse', reverse)
-
-function reverse() {
-	return function(items) {
-		return items.slice().reverse();
-	};
-}
 
 function todoForm(){
 	var directive = {
