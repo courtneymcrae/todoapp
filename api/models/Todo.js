@@ -4,7 +4,6 @@ var
 
 var todoSchema = new Schema({
 	name: String,
-	// completed: Boolean
 })
 
 var Car = mongoose.model('Todo', todoSchema)

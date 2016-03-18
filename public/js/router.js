@@ -38,6 +38,6 @@ function MainRouter($stateProvider, $urlRouterProvider) {
 		.state('detail', {
 			url: '/todos/:todoId',
 			templateUrl: 'partials/todo-detail.html',
-			controller: 'TodoDetailsController as TodoDetailsCtrl'
+			controller: 'TodoDetailsController as todoDetailsCtrl'
 		})
 }

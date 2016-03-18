@@ -9,15 +9,15 @@ function TodoDetailsController(todosFactory,$stateParams,$location){
 	vm.api = todosFactory
 	vm.todo = null
 	vm.editing = false
-	vm.showtodo = function(todoId){
+	vm.showTodo = function(todoId){
 		vm.api.show(todoId).success(function(response){
 			vm.todo = response
 			console.log(response)
 		})
 	}
-	vm.showtodo($stateParams.todoId)
+	vm.showTodo($stateParams.todoId)
 
-	vm.updatetodo = function(todoId, name){
+	vm.updateTodo = function(todoId, name){
 		var data = {name: name}
 		vm.api.updateTodo(todoId,data).success(function(response){
 			console.log(response)
