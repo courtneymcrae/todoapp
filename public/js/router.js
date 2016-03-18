@@ -33,11 +33,11 @@ function MainRouter($stateProvider, $urlRouterProvider) {
 		.state('todos', {
 			url: '/todos',
 			templateUrl: 'partials/todo-list.html',
-			controller: 'todosController as todosCtrl'
+			controller: 'TodosController as todosCtrl'
 		})
 		.state('detail', {
 			url: '/todos/:todoId',
 			templateUrl: 'partials/todo-detail.html',
-			controller: 'todoDetailsController as todoDetailsCtrl'
+			controller: 'TodoDetailsController as TodoDetailsCtrl'
 		})
 }

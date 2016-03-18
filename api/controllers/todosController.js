@@ -9,7 +9,7 @@ function getAllTodos(req,res){
 function createTodo(req,res){
 	var newTodo = new Todo
 	newTodo.make = req.body.name
-	newTodo.model = req.body.completed
+	// newTodo.model = req.body.completed
 	newTodo.save(function(err, todo){
 		if(err) throw err
 		res.json({message: "Todo Saved!", todo: todo})

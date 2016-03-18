@@ -17,8 +17,8 @@ function TodoDetailsController(todosFactory,$stateParams,$location){
 	}
 	vm.showtodo($stateParams.todoId)
 
-	vm.updatetodo = function(todoId, name, completed){
-		var data = {name: name, completed: completed}
+	vm.updatetodo = function(todoId, name){
+		var data = {name: name}
 		vm.api.updateTodo(todoId,data).success(function(response){
 			console.log(response)
 			vm.todo = response
@@ -26,7 +26,7 @@ function TodoDetailsController(todosFactory,$stateParams,$location){
 		})
 	}
 
-	vm.removeTodo = function(TodoId){
+	vm.removeTodo = function(todoId){
 		vm.api.removeTodo(todoId).success(function(response){
 			console.log(response)
 			$location.path('/todos')

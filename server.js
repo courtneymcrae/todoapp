@@ -13,7 +13,7 @@ mongoose.connect('mongodb://localhost/todoapp', function(err){
   console.log('Connected to MongoDB')
 })
 
-require('./database');
+// require('./database');
 
 // set up middleware
 app.use(cors())

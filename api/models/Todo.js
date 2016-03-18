@@ -4,9 +4,9 @@ var
 
 var todoSchema = new Schema({
 	name: String,
-	completed: Boolean
+	// completed: Boolean
 })
 
-var Todo = mongoose.model('Todo', todoSchema)
+var Car = mongoose.model('Todo', todoSchema)
 
-module.exports = Todo
+module.exports = Car

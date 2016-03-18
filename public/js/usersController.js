@@ -47,7 +47,7 @@ function UsersController($state, authFactory, $rootScope, $window) {
 		authFactory.login(vm.user.username, vm.user.password)
 		.then(function(response){
 			if(response.data.success){
-				$state.go("cars")
+				$state.go("todos")
 			} else {
 				vm.error = response.data.message
 			}
