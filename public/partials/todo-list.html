@@ -1,12 +1,14 @@
-<h1> You have {{ todosCtrl.todos.length || 0 }} thing to do</h1>
-
-<todo-form></todo-form>
-
-<h2 ng-show="todosCtrl.todos.length">All Todos:</h2>
+<h1> You have {{ todosCtrl.todos.length || 0 }} thing to do today</h1>
 
 <div class="list-group">
 	<a ng-repeat="todo in todosCtrl.todos track by $index" href="#/todos/{{ todo._id }}" class="list-group-item">
-  		<h3 class="list-group-item-heading">{{ todo.name }}</h3>
+  		<h3 class="list-group-item-heading">{{ todo.name }} </h3>
+  		<p class="list-group-item-text">{{ todo.completed }}</p>
   	</a>
 </div>
+
+<hr>
+
+<todo-form></todo-form>
+
 

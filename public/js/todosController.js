@@ -14,7 +14,7 @@ function TodosController (todosFactory){
 			vm.todos = res
 		})
 	vm.addTodo = function(name){
-		var data = {name:name}
+		var data = {name:name, completed:completed}
 		vm.api.addTodo(data)
 			.then(function success(res){
 				vm.todos.push(res.data.todo)

@@ -9,6 +9,7 @@ function getAllTodos(req,res){
 function createTodo(req,res){
 	var newTodo = new Todo
 	newTodo.name = req.body.name
+    newTodo.completed = req.body.completed
 	newTodo.save(function(err, todo){
 		if(err) throw err
 		res.json({message: "Todo Saved!", todo: todo})
@@ -44,6 +45,6 @@ module.exports = {
 	createTodo : createTodo,
 	getOneTodo : getOneTodo,
 	updateTodo : updateTodo,
-	deleteTodo : deleteTodo
+	deleteTodo : deleteTodo,
 
 }
