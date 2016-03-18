@@ -4,6 +4,22 @@ body {
   text-align: center;
   background: #edeff0;
   font-size: 16px; }
+  
+nav {
+    padding: 15px 30px;
+}
+
+.navbar, .navbar-default {
+    background: none;
+    border-width: 0px;
+}
+
+.navbar, .navbar-default {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding-left:0;
 
 .list {
   background: #fff;
