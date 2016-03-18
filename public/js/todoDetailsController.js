@@ -18,7 +18,7 @@ function TodoDetailsController(todosFactory,$stateParams,$location){
 	vm.showTodo($stateParams.todoId)
 
 	vm.updateTodo = function(todoId, name){
-		var data = {name: name, completed: completed}
+		var data = {name: name}
 		vm.api.updateTodo(todoId,data).success(function(response){
 			console.log(response)
 			vm.todo = response
