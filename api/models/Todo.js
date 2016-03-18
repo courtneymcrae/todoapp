@@ -6,6 +6,6 @@ var todoSchema = new Schema({
 	name: String,
 })
 
-var Car = mongoose.model('Todo', todoSchema)
+var Todo = mongoose.model('Todo', todoSchema)
 
-module.exports = Car
+module.exports = Todo
