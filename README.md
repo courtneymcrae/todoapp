@@ -32,3 +32,8 @@ username, password, first_name, last_name, email
 Todo Model 
 
 title, summary 
+
+<h2> User Stories </h2>
+![MacDown logo](./app/assets/images/screenshot1.png)
+
+<h2> Wire Frames </h2>
