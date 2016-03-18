@@ -45,5 +45,15 @@ apiRouter.route('/todos/:id')
 	.get(todosController.getOneTodo)
 	.patch(todosController.updateTodo)
 	.delete(todosController.deleteTodo)
+    
+//goals CRUD
+apiRouter.route('/goals')
+	.get(goalsController.getAllGoals)
+	.post(goalsController.createGoal)
+
+apiRouter.route('/goals/:id')
+	.get(goalsController.getOneGoal)
+	.patch(goalsController.updateGoal)
+	.delete(goalsController.deleteGoal)
 
 module.exports = apiRouter
