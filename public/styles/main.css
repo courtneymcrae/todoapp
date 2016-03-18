@@ -1,102 +1,88 @@
-body {
-  color: #2d3339;
-  font-family: "Varela Round";
-  text-align: center;
-  background: #edeff0;
-  font-size: 16px; }
-  
-nav {
-    padding: 15px 30px;
-}
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+		color: darkgray;
+		background-color: 	#F0F0F0;
 
-.navbar, .navbar-default {
-    background: none;
-    border-width: 0px;
 }
-
-.navbar, .navbar-default {
-    margin-bottom: 0;
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+			background-color: 	#F0F0F0;
 }
-
-.navbar-brand {
-    padding-left:0;
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+		  z-index: 2;
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+			background-color: 	#F0F0F0;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     
+body {
+
+	background-color: darkgray;
+}
+
+h1{
+	text-align: center;
+		color: darkgreen;
+}
+
 h2 {
-    color: #777;
-    margin:0;
-    font-size: 24px;
-    font-weight: 600;
+	text-align: center;
+		color: darkgreen;
 }
-.list {
-  background: #fff;
-  width: 80%;
-  min-width: 500px;
-  margin: 80px auto 0;
-  border-top: 40px solid #5a6772;
-  text-align: left; }
-  .list .item {
-    border-bottom: 2px solid #edeff0;
-    padding: 17px 0 18px 17px; }
-    .list .item label {
-      padding-left: 5px;
-      cursor: pointer; }
-    .list .item .editing-label {
-      margin-left: 5px;
-      font-family: "Varela Round";
-      border-radius: 2px;
-      border: 2px solid #a7b9c4;
-      font-size: 16px;
-      padding: 15px 0 15px 10px;
-      width: 60%; }
-    .list .item .actions {
-      float: right;
-      margin-right: 20px; }
-      .list .item .actions .delete {
-        color: #ed5a5a;
-        margin-left: 10px; }
-        .list .item .actions .delete:hover {
-          color: #f28888; }
-    .list .item.editing-item .actions {
-      margin-top: 17px; }
-  .list .edited label:after {
-    content: " edited";
-    text-transform: uppercase;
-    color: #a7b9c4;
-    font-size: 14px;
-    padding-left: 5px; }
-  .list .completed label {
-    color: #a7b9c4;
-    text-decoration: line-through; }
-  .list .add {
-    padding: 25px 0 27px 25px; }
-
-input[type="checkbox"] {
-    display:none;
-}
-input[type="checkbox"] + span {
-    display:inline-block;
-    width:19px;
-    height:19px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-    background:url(checkbox-empty.svg) left top no-repeat;
-    cursor:pointer;
-}
-input[type="checkbox"]:checked + span {
-    background:url(checkbox-filled.svg) left top no-repeat;
+h3 {
+	text-align: center;
+		color: darkgreen;
 }
 
-nav ul {
-  text-align: left;
-  list-style: none;
-  margin-left: 0;
-  padding: 0;
+body .background {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	z-index: -1;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
 }
-nav ul li {
-  display: inline-block;
+
+footer {
+	text-align: center;
+	color: white;
 }
-nav ul li a {
-  display: block;
-  margin: 0;
-  padding: 10px 15px;
-}
+
+
