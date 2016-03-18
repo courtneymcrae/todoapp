@@ -9,7 +9,7 @@ var
   apiRoutes = require('./routes/api.js'),
   cors = require('cors')
   
-  mongoose.connect('mongodb://localhost/todos', function(err){
+  mongoose.connect('mongodb://localhost/todoapp', function(err){
   if(err) throw err
   console.log('Connected to MongoDB')
 })
