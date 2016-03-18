@@ -45,7 +45,7 @@ function MainRouter($stateProvider, $urlRouterProvider) {
 			templateUrl: 'partials/goal-list.html',
 			controller: 'GoalsController as goalsCtrl'
 		})
-		.state('detail', {
+		.state('/goals/:goalId', {
 			url: '/goals/:goalId',
 			templateUrl: 'partials/goal-detail.html',
 			controller: 'GoalDetailsController as goalDetailsCtrl'

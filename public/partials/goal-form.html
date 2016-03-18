@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+	<div class="panel-heading"><h3 class="panel-title">Add A Goal</h3></div>
+	<div class="panel-body">
+		<form id="new-goal-form" ng-submit="goalsCtrl.addGoal(goalsCtrl.newGoal.name)">
+			<div class="form-group">    
+		    	<input type="text" name="name" ng-model="goalsCtrl.newGoal.name" placeholder="What is your goal this year?" class="form-control">
+		    </div>
+			<div class="text-center">
+			<button type="submit" class="btn btn-info btn-block">Add</button>
+			</div>
+		</form>
+	</div>
+</div>

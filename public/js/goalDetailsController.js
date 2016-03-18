@@ -1,15 +1,15 @@
 angular.module('reviewApp')
-	.controller('goalDetailsController', goalDetailsController)
+    .controller('GoalsDetailsController', GoalsDetailsController)
 
-goalDetailsController.$inject = ['goalsFactory','$stateParams','$location']
+GoalsDetialController.$inject = ['goalsFactory','$stateParams','$location']
 
-function goalsDetailsController(goalssFactory,$stateParams,$location){
+function GoalsDetailsController(goalsFactory,$stateParams,$location){
 	var vm = this
-	vm.name = 'Goals Detail'
+	vm.name = 'Goal Detail'
 	vm.api = goalsFactory
 	vm.goals = null
 	vm.editing = false
-	vm.showgoals = function(goalId){
+	vm.showGoal = function(goalId){
 		vm.api.show(goalId).success(function(response){
 			vm.goal = response
 			console.log(response)

@@ -1,8 +1,8 @@
 angular
-	.module('reviewApp')
-	.controller('goalsController', goalsController)
+    .module('reviewApp')
+	.controller('GoalsController', GoalsController)
 
-goalsController.$inject = ['goalsFactory']
+GoalsController.$inject = ['goalsFactory']
 
 function GoalsController (goalsFactory){
 	var vm = this;
@@ -13,7 +13,7 @@ function GoalsController (goalsFactory){
 		.success(function(res){
 			vm.goals = res
 		})
-	vm.addgoal = function(name){
+	vm.addGoal = function(name){
 		var data = {name:name}
 		vm.api.addGoal(data)
 			.then(function success(res){

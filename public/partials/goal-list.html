@@ -1,6 +1,8 @@
-<h1> You have {{ goalsCtrl.goals.length || 0 }} for this year </h1>
+<h1> You have {{ goalsCtrl.goals.length || 0 }} goal for this year </h1>
 
-<h2 ng-show="goalsCtrl.goals.length">To Do:</h2>
+<goal-form></goal-form>
+
+<h2 ng-show="goalsCtrl.goals.length">Goals:</h2>
 
 <div class="list-group">
 	<a ng-repeat="goal in goalsCtrl.goals track by $index" href="#/goals/{{ goal._id }}" class="list-group-item">

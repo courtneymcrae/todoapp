@@ -2,6 +2,7 @@ var express = require('express')
 var apiRouter = express.Router() //get an instance of express router
 var usersController = require('../controllers/usersController')
 var todosController = require('../controllers/todosController')
+var goalsController = require('../controllers/goalsController')
 
 var User = require('../models/User')
 
