@@ -37,7 +37,8 @@ title, summary
 ![MacDown logo](./app/assets/images/screenshot1.png)
 
 <h2> Wire Frames </h2>
-![MacDown logo](./app/assets/images/screenshot2.png)
+![MacDown logo](./app/assets/images/screenshot5.png)
+![MacDown logo](./app/assets/images/screenshot6.png)
 ![MacDown logo](./app/assets/images/screenshot3.png)
 ![MacDown logo](./app/assets/images/screenshot4.png)
-![MacDown logo](./app/assets/images/screenshot5.png)
+![MacDown logo](./app/assets/images/screenshot2.png)
