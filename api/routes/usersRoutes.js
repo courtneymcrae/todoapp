@@ -1,7 +1,7 @@
 var express = require('express')
 var apiRouter = express.Router() //get an instance of express router
 var usersController = require('../controllers/usersController')
-var carsController = require('../controllers/carsController')
+var todosController = require('../controllers/todosController')
 
 var User = require('../models/User')
 
@@ -36,14 +36,14 @@ apiRouter.route('/users/:user_id')
 	.put(usersController.update)
 	.delete(usersController.destroy)
 
-//cars CRUD
-apiRouter.route('/cars')
-	.get(carsController.getAllCars)
-	.post(carsController.createCar)
+//todos CRUD
+apiRouter.route('/todos')
+	.get(todosController.getAllTodos)
+	.post(todosController.createTodo)
 
-apiRouter.route('/cars/:id')
-	.get(carsController.getOneCar)
-	.patch(carsController.updateCar)
-	.delete(carsController.deleteCar)
+apiRouter.route('/todos/:id')
+	.get(todosController.getOneTodo)
+	.patch(todosController.updateTodo)
+	.delete(todosController.deleteTodo)
 
 module.exports = apiRouter
