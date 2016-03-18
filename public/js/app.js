@@ -9,7 +9,7 @@ function reverse() {
 	};
 }
 
-function carForm(){
+function todoForm(){
 	var directive = {
 		restrict: 'E',
 		templateUrl: '/partials/todo-form.html'

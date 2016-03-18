@@ -9,9 +9,9 @@ apiRouter.get('/', function(req,res){
 	res.json({message: "Api routes are working."})
 })
 
-apiRouter.route('/todos')
-	.get(todosController.getAlltodos)
-	.post(todosController.createtodo)
+// apiRouter.route('/todos')
+// 	.get(todosController.getAllTodos)
+// 	.post(todosController.createTodo)
 
 apiRouter.route('/todos/:id')
 	.get(todosController.getOneTodo)

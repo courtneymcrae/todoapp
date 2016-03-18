@@ -1,12 +1,12 @@
 <div class="panel panel-default">
 	<div class="panel-heading"><h3 class="panel-title">Add A New Todo</h3></div>
 	<div class="panel-body">
-		<form id="new-Todo-form" ng-submit="TodosCtrl.addTodo(TodosCtrl.newTodo.make,TodosCtrl.newTodo.model,TodosCtrl.newTodo.year)">
+		<form id="new-todo-form" ng-submit="todosCtrl.addTodo(todosCtrl.newTodo.name)">
 			<div class="form-group">    
-		    	<input type="text" name="name" ng-model="TodosCtrl.newTodo.name" placeholder="Name" class="form-control">
+		    	<input type="text" name="name" ng-model="todosCtrl.newTodo.name" placeholder="Name" class="form-control">
 		    </div>
 			<div class="form-group">
-				<input type="text" name="Completed" ng-model="TodosCtrl.newTodo.completed" placeholder="Completed" class="form-control">
+				<input type="text" name="Completed" ng-model="todosCtrl.newTodo.completed" placeholder="Completed" class="form-control">
 			</div>
 			<div class="text-center">
 			<button type="submit" class="btn btn-info btn-block">Add Todo</button>

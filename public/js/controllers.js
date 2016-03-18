@@ -28,7 +28,7 @@ function todosController(todosFactory, $window, $timeout){
 
 function todoDetailController(todosFactory,$stateParams,$location){
 	var self = this
-	self.name = 'todo Detail'
+	self.name = 'Todo Detail'
 	self.api = todosFactory
 	self.todo = null
 	self.editing = false
