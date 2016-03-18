@@ -40,4 +40,14 @@ function MainRouter($stateProvider, $urlRouterProvider) {
 			templateUrl: 'partials/todo-detail.html',
 			controller: 'TodoDetailsController as todoDetailsCtrl'
 		})
+        .state('goals', {
+			url: '/goals',
+			templateUrl: 'partials/goal-list.html',
+			controller: 'GoalsController as goalsCtrl'
+		})
+		.state('detail', {
+			url: '/goals/:goalId',
+			templateUrl: 'partials/goal-detail.html',
+			controller: 'GoalDetailsController as goalDetailsCtrl'
+		})
 }

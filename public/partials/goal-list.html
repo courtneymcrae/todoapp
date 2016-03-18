@@ -1,0 +1,9 @@
+<h1> You have {{ goalsCtrl.goals.length || 0 }} for this year </h1>
+
+<h2 ng-show="goalsCtrl.goals.length">To Do:</h2>
+
+<div class="list-group">
+	<a ng-repeat="goal in goalsCtrl.goals track by $index" href="#/goals/{{ goal._id }}" class="list-group-item">
+  		<h3 class="list-group-item-heading">{{ goal.name }} </h3>
+  	</a>
+</div>
