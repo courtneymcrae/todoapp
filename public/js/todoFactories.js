@@ -1,4 +1,5 @@
-angular.module('todosApp')
+angular
+	.module('reviewApp')
 	.factory('todosFactory', todosFactory)
 
 todosFactory.$inject = ['$http']
