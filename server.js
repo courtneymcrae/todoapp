@@ -8,10 +8,12 @@ var express 	= require('express'),
 	cors 		= require('cors'),
 	apiRouter 	= require('./api/routes/userRoutes')
   
-mongoose.connect('mongodb://localhost/todos', function(err){
+mongoose.connect('mongodb://localhost/todoapp', function(err){
   if(err) throw err
   console.log('Connected to MongoDB')
 })
+
+require('./database');
 
 // set up middleware
 app.use(cors())
