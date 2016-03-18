@@ -14,7 +14,7 @@ var
   console.log('Connected to MongoDB')
 })
 
-//enable cors
+//sets up middlewre
 app.use(cors());
 
 app.set('view engine', 'ejs')
@@ -32,10 +32,10 @@ app.get('/', function(req,res){
   res.render('index')
 })
 
-// configure our routes
+ // whenever we get a request starting with /api
 app.use('/api', apiRoutes)
 
-// startup our app at http://localhost:8080
+// startup our app at http://localhost:3000
 app.listen(3000, function(){
   console.log('Server Listening on port 3000...')
 })
